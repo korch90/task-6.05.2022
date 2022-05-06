@@ -1,91 +1,108 @@
+// Завдання 1 ????????
 
-// Task 1
+// Написати розв’язок нижче описаного завдання за допомогою конструкції switch:
+// 1.	Користувач вводить число в prompt
+// 2.	Після введення числа вистрибує алерт з оголошенням пори року до якої відноситься число (номер місяця) що ввів користувач.
+// 3.	Якщо число не входить в діапазон від 1 до 12 тоді виводить що це неможливо.
+// ------------------------------------------------------------------------------------------
 
-let factorial=Number(prompt("write a number"))
+// Завдання 2  ????
 
-function factorialResult(factorial){
-    let showRes=1
-for (let i=1; i<=factorial;i ++){
-    showRes*=i
+// Написати розв’язок нижче описаного завдання за допомогою function declaration:
+// 1.	Створити функцію яка буде приймати одне число.
+// 2.	В середині функції перевіряємо чи це число є простим.
+// 3.	Після перевірки виводимо повідомлення в console.log().
+// ------------------------------------------------------------------------------------------
+
+// Завдання 3
+
+// Написати розв’язок нижче описаного завдання за допомогою function declaration:
+// 1.	Потрібно створити функцію, яка повертає максимальний переданий їй числовий параметр.
+// 2.	Кількість параметрів у функції може бути від 2х і більше.
+// 3.	Забороняється використовувати Math.max().
+// Приклад роботи:
+// 1.	max(5,-2) – має повернути 5.
+// 2.	max(5,-2, 30, 6) – має повернути 30
+
+// Task1
+let x=Number(prompt("enter number of mounth"))
+switch(x){
+case 1: alert("січень")
+break
+case 2: alert("лютий")
+break
+case 3: alert("березень")
+break
+case 4: alert("квітень")
+break
+case 5: alert("травень")
+break
+case 6: alert("червень")
+break
+case 7: alert("липень")
+break
+case 8: alert("серпень")
+break
+case 9: alert("вереснь")
+break
+case 10: alert("жлвтень")
+break
+case 11: alert("листопад")
+break
+case 12: alert("грудень")
+break
+default :alert("write a number")
 }
-return showRes
+// Task2
+
+let SearchInteger= function(i){
+    for(let j=2;j<i;j++){
+if(i%j==1){
+return alert("integer") 
 }
-alert(factorialResult(factorial))
-
-// Task 2
-
-function show4numbersCoun(){
-    for(let i=1000;i<=10000;i+=3){
-        document.write(`${i}<br>`)
+else {alert("not integer") 
+break
+}
 }}
-show4numbersCoun()
+SearchInteger(prompt("write a number"))
 
 // Task3
+let n
+let max=function(){
+for (let i=0;i<arguments.length;i++)
+if(arguments[i]>=arguments[i-1]){n=arguments[i]}
+else{continue}
+return n
+}
+console.log(max(8,9,3,11,0,-9))
 
-let j=55
-let i=1
-let k=0
-while(k<j)
-{
-i+=2
-k++
-document.write(i+'<br>')
+// task 4
+let password=5
+let count=4
+let usersPromt= function(){return prompt("enter your pass")
 }
 
-
-// Task4
-let s=90
-let p=5
-
-while(s>=0+p)
-{
-s-=p
-res=s
-document.write(res+'<br>')}
-
-
-
-// Task5
-let h=20
-let l=1
-let m=0
-while(k<h)
-{
-l*=2
-m++
-document.write(l+'<br>')
-}
-
-// Task6
-let a=2
-for(let i=a;i<=10000;i*=a){
-document.write(i-1+'<br>')  
-}
-
-// Task7
-let z=-166
-while(z<100){
-    if(z>-100&&z<100){
-        console.log(z) 
+if(usersPromt()==password)
+{alert('entering')}
+else {
+    do{
+        count--
+    alert(`'wrong pass:you have '${count} ' attempt' `)
+    usersPromt()
+} while(count!==0)
+        
+  alert('try later')  
     }
-    z*=2
-    z+=200
-}
 
-// Task8
- let number=Number(prompt("number"))
-let power=Number(prompt("power"))
 
-let resultPowering=1
 
-function showPow(number,power){
 
-  if (power == 1||power==0) {
-        return number;
-      } else if(power>0){
-        return number * showPow(number, power - 1);
-      }
-      else{
-        return number / showPow(number, Math.abs(power) -1); 
-      }}
-document.write(showPow(number,power))
+
+
+
+
+
+
+    let p
+
+
